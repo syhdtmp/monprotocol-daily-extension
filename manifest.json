@@ -1,0 +1,26 @@
+{
+  "manifest_version": 3,
+  "name": "MonProtocol Quest Completer",
+  "version": "1.0",
+  "description": "Automatically completes quests for MonProtocol.",
+  "permissions": [
+    "activeTab",
+    "storage",
+    "scripting",
+    "https://app.monprotocol.ai/"
+  ],
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "web_accessible_resources": [
+    {
+      "resources": [
+        "popup.html",
+        "popup.js"
+      ],
+      "matches": [
+        "https://app.monprotocol.ai/*"
+      ]
+    }
+  ]
+}
